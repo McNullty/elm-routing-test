@@ -39,21 +39,21 @@ suite =
         , test "when path is 'items-new'" <|
             \_ ->
                 let
-                    url = "items-new"
+                    url = "/items-new"
                 in
                 Expect.equal (Just NewItem) <|
                     (UrlParser.parse urlParser) <| (createUrl url)
         , test "when path is 'items'" <|
             \_ ->
                 let
-                    url = "items"
+                    url = "/items"
                 in
                 Expect.equal (Just (Items Nothing)) <|
                     (UrlParser.parse urlParser) <| (createUrl url)
         , test "when path is 'items?page=1'" <|
             \_ ->
                 let
-                    url = "items"
+                    url = "/items"
                     query = "page=1"
                 in
                 Expect.equal (Just (Items (Just 1))) <|
@@ -61,7 +61,7 @@ suite =
         , test "when path is 'items/bd7edd3c-802f-4e79-9377-b0ef0bb1a208'" <|
             \_ ->
                 let
-                    url = "items/bd7edd3c-802f-4e79-9377-b0ef0bb1a208"
+                    url = "/items/bd7edd3c-802f-4e79-9377-b0ef0bb1a208"
                 in
                 Expect.equal (Just (Item "bd7edd3c-802f-4e79-9377-b0ef0bb1a208")) <|
                     (UrlParser.parse urlParser) <| (createUrl url)

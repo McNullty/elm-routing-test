@@ -86,7 +86,7 @@ view model =
                 , a [ inline, padded, href "/List#map" ] [ text "List.map" ]
                 , a [ inline, padded, href "/List#filter" ] [ text "List.filter" ]
                 , a [ inline, padded, href "/items" ] [ text "Items" ]
-                , a [ inline, padded, href "/items/new" ] [ text "New Item" ]
+                , a [ inline, padded, href "/items-new" ] [ text "New Item" ]
                 ]
 
     in
