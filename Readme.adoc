@@ -1,0 +1,8 @@
+= Documentation
+
+== Running application
+`elm-live src/Main.elm --open --pushstate -- --output=elm.js`
+
+== Running tests
+
+`elm-test`
